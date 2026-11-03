@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK NIEUK - Strona główna</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<div class="data">
+    Oficjalna strona CK NIEUK | Brzeziny
+    <span id="zegar"></span>
+</div>
+
+<header>
+    <h1>CK NIEUK</h1>
+    <p>Centrum Krztałcenia "Nieuk" w Brzezinach</p>
+</header>
+
+<nav>
+    <a href="index.html">Główna</a>
+    <a href="szkola.html">O szkole</a>
+    <a href="nauka.html">Nauka</a>
+    <a href="regulamin.html">Regulamin</a>
+    <a href="plan.html">Plan lekcji</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="baner">
+    <h2>Witamy w CK NIEUK!</h2>
+    <p>Brzeziny – tutaj zaczyna się Twoja edukacyjna przygoda!</p>
+    <a href="szkola.html" class="przycisk">Poznaj naszą szkołę</a>
+</div>
+
+<main>
+
+<section>
+    <h2>Witamy na stronie szkoły</h2>
+    <p>
+        Centrum Krztałcenia "Nieuk" w Brzezinach
+        zaprasza do zapoznania się z naszą placówką.
+        Na stronie znajdziesz informacje o szkole,
+        nauce, kadrze pedagogicznej i wydarzeniach.
+    </p>
+</section>
+
+<section>
+    <h2>Najważniejsze informacje</h2>
+    <div class="kafelki">
+        <div class="kafelek">
+            <h3>🏫 Nasza szkoła</h3>
+            <p>Poznaj historię i działalność placówki.</p>
+            <a href="szkola.html">Czytaj więcej →</a>
+        </div>
+
+        <div class="kafelek">
+            <h3>📚 Nauka</h3>
+            <p>Sprawdź informacje o nauczaniu.</p>
+            <a href="nauka.html">Czytaj więcej →</a>
+        </div>
+
+        <div class="kafelek">
+            <h3>📜 Regulamin</h3>
+            <p>Zapoznaj się z zasadami szkoły.</p>
+            <a href="regulamin.html">Czytaj więcej →</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Aktualności</h2>
+
+    <div class="aktualnosc">
+        <b>03.11.2026 – Nowy tydzień</b>
+        <p>Uczniowie wracają do codziennych obowiązków szkolnych.</p>
+    </div>
+
+    <div class="aktualnosc">
+        <b>02.11.2026 – Ważne ogłoszenie</b>
+        <p>Prosimy o regularne sprawdzanie dziennika elektronicznego.</p>
+    </div>
+
+    <div class="aktualnosc">
+        <b>01.11.2026 – Szkolne wydarzenia</b>
+        <p>W najbliższym czasie planowane są nowe atrakcje.</p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>Centrum Krztałcenia "Nieuk" w Brzezinach</p>
+    <p>Wszelkie prawa zastrzeżone © 2026</p>
+</footer>
+
+<a href="#" class="powrot">↑</a>
+
+<script>
+function aktualizujZegar() {
+    document.getElementById("zegar").innerHTML =
+        " | " + new Date().toLocaleString("pl-PL");
+}
+aktualizujZegar();
+setInterval(aktualizujZegar, 1000);
+</script>
+
+</body>
+</html>
